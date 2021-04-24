@@ -1,0 +1,89 @@
+#include<stdio.h>
+#include<math.h>
+
+
+int main (){
+
+//cherilus Sam Bracley
+//GMAIL:cherilussambracley@gmail.com
+//INSTAGRAM:tech5_09
+
+
+int number_one;
+int number_two;
+int number_three;
+
+
+
+printf("Insert the first number \n");
+scanf("%d", &number_one);
+
+
+
+printf("Insert the second number \n");
+scanf("%d", &number_two);
+
+
+printf("Insert the third number \n");
+scanf("%d", &number_three);
+
+
+
+int delta_value= (number_two*number_two)- (4*number_one*number_three);
+
+printf("The value of delta is %d \n", delta_value);
+
+
+// if delta is less than zero we don't have any root(s)
+//but otherwise if delta is more than zero we have 2 roots
+//if delta is equal to 0 we have a same value for the 2 roots
+
+
+
+if(delta_value>0){
+
+printf("In this case we have two values \n");
+
+// we need to catch or get the sqrt of delta's value
+
+int square_root= sqrt(delta_value);
+
+
+int value_one= (-number_two-square_root)/(2*number_one);
+printf("The first root is %d \n", value_one);
+
+
+int value_two= (-number_two+square_root)/(2*number_one);
+printf("The second root is %d ", value_two);
+
+
+}
+
+
+
+
+if(delta_value = 0){
+
+//in this case we have the third situation
+
+int same_root=(-number_two)/(2*number_one);
+printf("THe root is %d \n", same_root);
+
+
+}
+
+
+
+if(delta_value<0){
+//First case situation
+
+printf("No root(s) in this case ");
+
+}
+
+
+
+}
+
+
+
